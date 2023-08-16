@@ -13,8 +13,19 @@ function App() {
 function MyList() {
   return (
     <ul>
-      <li>Barbie</li>
+      <MovieItems />
     </ul>
   );
 }
 export default App
+
+function MovieItems() {
+  return (
+     <li>
+       <div className="divImage"></div>
+       <div>
+         <h2 className="movieName" >Barbie</h2>
+       </div>
+     </li>
+  )
+}
