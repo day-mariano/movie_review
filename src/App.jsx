@@ -13,7 +13,7 @@ function App() {
 function MyList() {
   return (
     <ul>
-      <li>first movie</li>
+      <li>Barbie</li>
     </ul>
   );
 }
