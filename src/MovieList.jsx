@@ -1,5 +1,4 @@
-import MovieItems from './MovieItems';
-import StarRater from './StarRater';
+import MovieItem from './MovieItem';
 import { useEffect, useState } from "react";
 
 function MovieList() {
@@ -20,36 +19,17 @@ function MovieList() {
     // Fetch data from the API
     fetch(url, options)
       .then((res) => res.json()) // Parse the response as JSON
-      .then((json) => console.log(json.results[2]))
-      .then(movieList => setMovieList(movieList)) // Update the state with fetched data
+      .then(json => setMovieList(json)) // Update the state with fetched data
       .catch((err) => console.error("error:" + err));
   }, []);
 
   return (
     <ul className="List">
-      <li>
-        li from movieList function
-        {movieList ? (
-          <pre>{JSON.stringify(movieList.results[1], 2)}</pre>
-        ) : (
+        {movieList ? movieList.results.map((filme) => (
+          <MovieItem key={filme.id} nome={filme.title} rating={filme.vote_average} />
+        )) : (
           <p>Loading movie list...</p>
         )}
-        <StarRater />
-      </li>
-      {/* { {movieList.slice.map((movie) => {
-
-        <li key={movie.id}>
-          <div>
-            <h2 className="movieName">{movie.name}</h2>
-            <StarRater />
-          </div>
-        </li>
-
-      }
-      )}}  */}
-      <MovieItems />
-      <MovieItems />
-      <MovieItems />
     </ul>
   );
 }

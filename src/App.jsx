@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <h1>Movie Review ⭐️</h1>
-      <p>Welcome to Movie Review, your page to rate movies and read reviews</p>
+      <h2>Welcome to Movie Review, your page to rate movies and read reviews</h2>
       <MovieList />
     </div>
   )
