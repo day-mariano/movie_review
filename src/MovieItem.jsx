@@ -1,10 +1,11 @@
-import StarRater from './StarRater'
+//import StarRater from './StarRater'
 
 function MovieItem(filme) {
   return (
      <li>
-         <h3 className="movieName"> {filme.nome} </h3>
-         <StarRater />
+        <h3 className="movieName"> {filme.nome} </h3>
+        <h4 className="movieVote"> ⭐️{filme.nota} </h4>
+        {/* <StarRater /> */}
      </li>
   )
 }

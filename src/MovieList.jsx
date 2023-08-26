@@ -26,7 +26,7 @@ function MovieList() {
   return (
     <ul className="List">
         {movieList ? movieList.results.map((filme) => (
-          <MovieItem key={filme.id} nome={filme.title} rating={filme.vote_average} />
+          <MovieItem key={filme.id} nome={filme.title} nota={filme.vote_average} poster={filme.poster_path} />
         )) : (
           <p>Loading movie list...</p>
         )}
