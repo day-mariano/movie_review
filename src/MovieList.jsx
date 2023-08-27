@@ -1,4 +1,5 @@
 import MovieItem from './MovieItem';
+import './App.css'
 import { useEffect, useState } from "react";
 
 function MovieList() {
