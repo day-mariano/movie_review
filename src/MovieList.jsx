@@ -1,6 +1,7 @@
 import MovieItem from './MovieItem';
 import './App.css'
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function MovieList() {
   const [movieList, setMovieList] = useState(null);
@@ -31,6 +32,7 @@ function MovieList() {
         )) : (
           <p>Loading movie list...</p>
         )}
+        <Link to={"MovieList/" + filme.id}>Details</Link>
     </ul>
   );
 }
