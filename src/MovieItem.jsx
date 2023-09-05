@@ -5,7 +5,7 @@ function MovieItem(filme) {
         <div className="movieInfo">
           <h3 className="movieName"> {filme.nome} </h3>
           <h4 className="movieVote"> ⭐️ {filme.nota} </h4>
-          <a href="/moviePage">More information</a>
+          <a href="/moviepage">More information</a>
         </div>
      </li>
   )
