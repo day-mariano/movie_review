@@ -26,14 +26,18 @@ function MovieList() {
   }, []);
 
   return (
-    <ul className="List">
-        {movieList ? movieList.results.map((filme) => (
-          <MovieItem key={filme.id} nome={filme.title} nota={filme.vote_average} poster={filme.poster_path} />
-        )) : (
-          <p>Loading movie list...</p>
-        )}
-        {/* <Link to={"MovieList/" + filme.id}>Details</Link> */}
-    </ul>
+    <div>
+      <h1>Movie Review 🍿</h1>
+      <h2>Welcome to Movie Review, your page see to average votes and read reviews</h2>
+      <ul className="List">
+          {movieList ? movieList.results.map((filme) => (
+            <MovieItem key={filme.id} nome={filme.title} nota={filme.vote_average} poster={filme.poster_path} />
+          )) : (
+            <p>Loading movie list...</p>
+          )}
+          {/* <Link to={"MovieList/" + filme.id}>Details</Link> */}
+      </ul>
+    </div>
   );
 }
 

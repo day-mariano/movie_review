@@ -1,7 +1,7 @@
 function MovieModal() {
   return (
     <div>
-      pagina do filme
+      <h1>Movie page</h1>
     </div>
   )
 }
