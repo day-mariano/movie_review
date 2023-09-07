@@ -18,6 +18,9 @@ body {
   font-weight: 700;
   color: white;
 }
+#title:hover{
+  color: rgb(152, 0, 38);
+}
 h2{
   color: darkgray;
 }
