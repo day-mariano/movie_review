@@ -1,7 +1,7 @@
 function MoviePage() {
   return (
     <div>
-      <h1>Movie page</h1>
+      <h2>Movie info 🎬</h2>
       <div className="moviePageInfos">
         nome, poster, descrição, ano, diretor, nota
       </div>

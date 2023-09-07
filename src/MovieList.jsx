@@ -27,7 +27,6 @@ function MovieList() {
 
   return (
     <div>
-      <h1>Movie Review 🍿</h1>
       <h2>Welcome to Movie Review, your page see to average votes and read reviews</h2>
       <ul className="List">
           {movieList ? movieList.results.map((filme) => (
@@ -35,7 +34,6 @@ function MovieList() {
           )) : (
             <p>Loading movie list...</p>
           )}
-          {/* <Link to={"MovieList/" + filme.id}>Details</Link> */}
       </ul>
     </div>
   );
