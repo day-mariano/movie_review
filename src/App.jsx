@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <header>
-      <a id='title' href="/">Movie Review 🍿</a>
+        <a id='title' href="/">Movie Review 🍿</a>
       </header>
       <BrowserRouter>
         <Routes>
