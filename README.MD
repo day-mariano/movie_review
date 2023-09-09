@@ -10,3 +10,5 @@ Repositório destinado a desafio de página de filmes.
 - Fetch API
 - Vite
 - React
+
+![Preview](public/preview.png)
