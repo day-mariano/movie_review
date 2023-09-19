@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<MovieList />}/>
-          <Route path='/moviepage11' element={<MoviePage />} />
+          <Route path='/movie/:rg' element={<MoviePage />} />
         </Routes>
       </BrowserRouter>
       <footer>Created by Dayana Mariano 2023</footer>

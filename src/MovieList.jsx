@@ -30,7 +30,7 @@ function MovieList() {
       <h2>Welcome to Movie Review, your page see to average votes and read reviews</h2>
       <ul className="List">
           {movieList ? movieList.results.map((filme) => (
-            <MovieItem key={filme.id} nome={filme.title} nota={filme.vote_average} poster={filme.poster_path} />
+            <MovieItem key={filme.id} filme={filme} />
           )) : (
             <p>Loading movie list...</p>
           )}
