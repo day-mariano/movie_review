@@ -31,7 +31,16 @@ function MoviePage() {
     <div>
       <h2>Movie info 🎬</h2>
       <div className="moviePageInfos">
-        nome: {filme.title}, poster, descrição, ano, diretor, nota
+        <div>
+        <img src={"https://www.themoviedb.org/t/p/w220_and_h330_face" + filme.poster_path} alt={filme.title}/>
+        </div>
+        <div>
+          <h3>{filme.title}</h3>
+          <p>Overview: {filme.overview}</p>
+          <p>Release date: {filme.release_date}</p>
+          <p>Popularity: {filme.popularity}</p>
+          <p>⭐️ Vote average: {filme.vote_average}</p>
+        </div>
       </div>
     </div>
   ) : (
