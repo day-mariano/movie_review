@@ -36,10 +36,11 @@ function MoviePage() {
         </div>
         <div>
           <h3>{filme.title}</h3>
-          <p>Overview: {filme.overview}</p>
-          <p>Release date: {filme.release_date}</p>
-          <p>Popularity: {filme.popularity}</p>
-          <p>⭐️ Vote average: {filme.vote_average}</p>
+          <p><b>🎞 Overview:</b> {filme.overview}</p>
+          <p><b>📅 Release date:</b> {filme.release_date}</p>
+          <p><b>👥 Popularity:</b> {filme.popularity}</p>
+          <p><b>🎙 Original language:</b> {filme.original_language}</p>
+          <p><b>⭐️ Vote average:</b> {filme.vote_average}</p>
         </div>
       </div>
     </div>
