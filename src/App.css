@@ -4,13 +4,19 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: white;
-  flex-direction: column;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.content {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
 }
 #title{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -76,15 +82,10 @@ li img {
   color: white;
   text-decoration: none;
  }
- .moviePageInfos {
+ 
+
+ footer {
   display: flex;
-  margin: 1rem;
-  padding: 1rem;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.6px);
-  -webkit-backdrop-filter: blur(9.6px);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  flex-direction: column;
+  margin: 2rem;
  }

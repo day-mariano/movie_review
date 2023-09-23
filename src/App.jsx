@@ -5,14 +5,16 @@ import MoviePage from './MoviePage'
 
 function App() {
   return (
-    <div>
-      <header> <a id='title' href="/"> Movie Review 🍿 </a> </header>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<MovieList />}/>
-          <Route path='/movie/:rg' element={<MoviePage />} />
-        </Routes>
-      </BrowserRouter>
+    <div className='page'>
+      <div className='content'>
+        <header> <a id='title' href="/"> Movie Review 🍿 </a> </header>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<MovieList />}/>
+            <Route path='/movie/:rg' element={<MoviePage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
       <footer>Created by Dayana Mariano 2023</footer>
     </div>
   )

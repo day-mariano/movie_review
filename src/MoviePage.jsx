@@ -1,5 +1,14 @@
 import { useLocation } from "react-router-dom";
 import { useEffect ,useState } from 'react'
+import './moviePage.css'
+
+function getLanguageFlag(countryCode) {
+  switch (countryCode) {
+    case "en": return "🇺🇸";
+    case "pt": return "🇧🇷";
+    default: return countryCode;
+  }
+}
 
 function MoviePage() {
   const location = useLocation()
@@ -30,16 +39,16 @@ function MoviePage() {
   return filme ? (
     <div>
       <h2>Movie info 🎬</h2>
-      <div className="moviePageInfos">
+      <div className="moviePageSection">
         <div>
         <img src={"https://www.themoviedb.org/t/p/w220_and_h330_face" + filme.poster_path} alt={filme.title}/>
         </div>
-        <div>
+        <div className="moviePageInfos">
           <h3>{filme.title}</h3>
           <p><b>🎞 Overview:</b> {filme.overview}</p>
           <p><b>📅 Release date:</b> {filme.release_date}</p>
           <p><b>👥 Popularity:</b> {filme.popularity}</p>
-          <p><b>🎙 Original language:</b> {filme.original_language}</p>
+          <p><b>🎙 Original language:</b> {getLanguageFlag(filme.original_language)}</p>
           <p><b>⭐️ Vote average:</b> {filme.vote_average}</p>
         </div>
       </div>
