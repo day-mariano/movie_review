@@ -31,3 +31,8 @@ img {
   max-width: 500px;
   margin-left: 2rem;
 }
+
+@media (max-width: 768px) {
+  .moviePageSection {
+    flex-direction: column;
+  }
