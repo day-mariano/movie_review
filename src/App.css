@@ -13,14 +13,9 @@ body {
   height: 100vh;
 }
 
-.content {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-}
 #title{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 3.2em;
+  font-size: 2.5em;
   font-weight: 700;
   color: white;
 }
@@ -29,11 +24,17 @@ body {
 }
 h2{
   color: darkgray;
+  font-size: 1em;
+}
+
+h3 {
+  margin: 0;
 }
 ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1260px;
 }
 li {
   display: flex;
@@ -48,24 +49,16 @@ li {
   border: 1px solid rgba(255, 255, 255, 0.09);
 }
 
- li:hover {
-    /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.21);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.3px);
-  -webkit-backdrop-filter: blur(4.3px);
-  border: 1px solid rgba(255, 255, 255, 0.19);
-}
-li:active{
+li:hover {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.28);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px);
-  border: 1px solid rgba(255, 255, 255, 0.19);
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.3px);
+-webkit-backdrop-filter: blur(4.3px);
+border: 1px solid rgba(255, 255, 255, 0.19);
 }
+
 li img {
   width: auto;
   height: 200px;
@@ -76,16 +69,45 @@ li img {
   margin: auto 1rem ;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 160px;
+}
+
+.movieVote {
+  margin: 1rem;
 }
  a {
   color: white;
   text-decoration: none;
  }
  
+ #buttonDetails {
+  background-color: rgb(255, 219, 56);
+  border-radius: 8px;
+  color: rgb(82, 82, 82);
+  font-weight: 600;
+  width: 85px;
+  padding: 2px;
+  font-size: 12px;
+  margin-top: 1rem;
+
+ }
+
+ #buttonDetails:hover {
+  box-shadow: rgba(247, 214, 25, 0.338) 0px 0px 0px 6px;
+ }
+
+ #buttonDetails:active{
+  /* From https://css.glass */
+  background: rgb(177, 136, 12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
 
  footer {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
  }
