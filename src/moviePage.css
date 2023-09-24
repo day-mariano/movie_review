@@ -11,7 +11,7 @@ p{
   min-width: 200px;
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 2rem auto;
   padding: 2rem;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.1);
