@@ -18,7 +18,7 @@ body {
 .page {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,6 +47,8 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1260px;
+  min-width: 400px;
+  margin-right: 2rem;
 }
 li {
   display: flex;
@@ -102,7 +104,6 @@ li img {
   padding: 2px;
   font-size: 12px;
   margin-top: 1rem;
-
  }
 
  #buttonDetails:hover {
@@ -122,4 +123,16 @@ li img {
  footer {
   display: flex;
   flex-direction: column;
+ }
+
+ @media (max-width: 1278px) {
+  ul {
+    justify-content: space-evenly;
+  }
+ }
+
+ @media (max-width: 888px) {
+  ul {
+    justify-content: center;
+  }
  }

@@ -26,7 +26,7 @@ function MovieList() {
   }, []);
 
   return (
-    <div>
+    <div className='movieListDiv'>
       <h2>Welcome to Movie Review, your page see to average votes and read reviews</h2>
       <ul className="List">
           {movieList ? movieList.results.map((filme) => (

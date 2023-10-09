@@ -5,6 +5,9 @@ h3{
 p{
   font-size: 18px;
 }
+.moviePageDiv{
+  padding: 2rem;
+}
 
 .moviePageSection {
   max-width: 840px;

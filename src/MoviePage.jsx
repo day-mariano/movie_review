@@ -37,7 +37,7 @@ function MoviePage() {
   }, [filme])
 
   return filme ? (
-    <div>
+    <div className="moviePageDiv">
       <h2>Movie info 🎬</h2>
       <div className="moviePageSection">
         <div>
